@@ -1,0 +1,30 @@
+(X) INSTALACION TYPESCRIPT.
+
+1) Ir a nodejs.org (Descargar NODEJS).
+2) Comprobar la instalacion, escribiendo en una terminal (cmd) "node -v" -> Si indica la version, esta correctamente instalado.
+3) Descargar la version de Typescript, en una terminal (cmd) "npm install -g typescript" -> Verificar con tsc -v.
+
+
+(X) CREAR UNA CARPETA DONDE TRABAJAR.
+
+1) Escribir en la terminal "tsc --init" -> Esto va a generar un archivo de configuracion "tsconfig.json"
+2) IMPORTANTE: Descomentar -> "sourceMap": true, en el archivo tsconfig.json.
+
+(X) ARRASTRAR LA CARPETA , AL VISUAL STUDIO CODE.    
+1) CTRL + SHIFT + D (DEPURAR).
+2) Seleccionar el entorno NODE.JS.
+3) Esto genera una carpeta llamada .vscode, y adentro un archvo llamado launch.json. Se le tiene
+que agregar una configuracion llamada "INICIAR PROGRAMA".
+4) Abrir menu de tareas, seleccionar Ejecutar tarea de compilacion, y elegir tsc: build tsconfig.json
+
+
+COMANDOS: 
+
+Para que un archivo se transpile de ts a js, usar:
+tsc <nombre>.ts
+
+Para agregar una inspeccion sobre un archivo, usar:
+tsc -w <nombre>.ts
+
+Para juntar varios archivos .ts en un solo archivo js, usar:
+tsc --outfile <NombreSalida> <Archivo1.ts> <Archivo2.ts>
