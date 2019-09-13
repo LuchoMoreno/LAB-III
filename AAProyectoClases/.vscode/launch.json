@@ -8,7 +8,7 @@
         "type": "node",
         "request": "launch",
         "name": "Ejercicios",
-        "program": "${workspaceFolder}/Clase_03/ejercicio_03/main.js"
+        "program": "${workspaceFolder}/Clase_03/ejercicio_03/login.js"
       },
         {
             "type": "node",

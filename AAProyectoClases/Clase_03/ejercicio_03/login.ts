@@ -1,13 +1,13 @@
 if (localStorage.getItem("Empleados") == null)
 {
-    localStorage.setItem("Empleados", "Juan - 123, Rosa - 456, Carlos - 789");
+    localStorage.setItem("Empleados", "Juan-123, Rosa-456, Carlos-789");
 }
 
-
-function Verificar():void {
+function Verificar(): void {
 
   var nombre : string = (<HTMLInputElement> document.getElementById("txtNombre")).value;
   var legajo : string = (<HTMLInputElement> document.getElementById("txtLegajo")).value;
+  var flag : number = 0;
 
 
   let data : string | null = localStorage.getItem("Empleados");
@@ -18,20 +18,32 @@ function Verificar():void {
   {
     arrayData = data.split(",")
 
-    arrayData.forEach(function (value)
-    {
-      alert(value);
 
-      arrayDataDos = value.split("-");
+    for (let datos of arrayData){
 
-      if (arrayDataDos[0] == nombre && arrayDataDos[1] == legajo)
-      {
-        alert("Lo encontre");
-      }
+      alert(datos);
 
-    });
+      arrayDataDos = datos.split("-");
+
+      //alert(arrayDataDos[0]);
+      //alert(arrayDataDos[1]);
+
+      let c1 = arrayDataDos[0].localeCompare(nombre);
+      let c2 = arrayDataDos[1].localeCompare(legajo);
+
+      //alert(c1);
+      //alert(c2);
+
+      if (c1 == 0 && c2 == 0){ flag = 1; }
+
+    }
+
+    if (flag == 1) { alert("Lo encontre"); }
+    
   }
-
-
 }
 
+function LimpiarLocalStorage():void
+{
+    localStorage.clear();
+}
