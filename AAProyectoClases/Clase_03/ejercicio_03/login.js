@@ -27,6 +27,7 @@ function Verificar() {
         }
         if (flag == 1) {
             alert("Lo encontre");
+            window.location.href = 'principal.html';
         }
     }
 }

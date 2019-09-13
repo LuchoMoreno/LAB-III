@@ -38,8 +38,12 @@ function Verificar(): void {
 
     }
 
-    if (flag == 1) { alert("Lo encontre"); }
-    
+    if (flag == 1) { alert("Lo encontre");
+    window.location.href = 'principal.html';
+
+  }
+
+
   }
 }
 
