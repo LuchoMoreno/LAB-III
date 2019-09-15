@@ -76,6 +76,7 @@ class Producto
 		
 		return $resultado;
 	}
+	
 	public static function TraerTodosLosProductos()
 	{
 
@@ -102,6 +103,8 @@ class Producto
 	public static function Modificar($obj)
 	{
 		$resultado = TRUE;
+
+
 		
 		//OBTENGO TODOS LOS PRODUCTOS
 		//RECORRO Y BUSCO LA IMAGEN ANTERIOR. REEMPLAZO POR EL OBJ. MODIFICADO
@@ -117,6 +120,10 @@ class Producto
 	{
 		$resultado = TRUE;
 		
+		
+
+
+
 		//OBTENGO TODOS LOS PRODUCTOS
 		//RECORRO Y BUSCO LA IMAGEN ANTERIOR. 
 		//BORRO LA IMAGEN ANTERIOR
