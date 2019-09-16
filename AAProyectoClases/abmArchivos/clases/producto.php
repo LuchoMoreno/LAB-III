@@ -119,9 +119,37 @@ class Producto
 	public static function Eliminar($codBarra)
 	{
 		$resultado = TRUE;
+	 
+		// $arrayProductos = array();
+		// $arrayProductos = TraerTodosLosProductos();
 		
-		
+		// $longitud = count($arrayProductos);
 
+		// for ($i = 0; $i<$longitud; $i++)
+		// {
+		// 	echo $arrayProductos[$i];
+
+		// 	$codigoBarra = $arrayProductos[$i]->GetCodBarra;
+			
+		// 	if ($codigoBarra == $codBarra)
+		// 	{
+
+		// 		$archivo=fopen("archivos/productos.txt", "r");
+				
+		// 		while(!feof($archivo))
+		// 			{
+		// 				$archAux = fgets($archivo);
+		// 				$productos = explode(" - ", $archAux);
+		// 				$productos[0] = trim($productos[0]);
+		// 				if($productos[0] != ""){
+		// 					$ListaDeProductosLeidos[] = new Producto($productos[0], $productos[1],$productos[2]);
+		// 			}
+
+		// 		fclose($archivo);
+		// }
+		
+		// }	
+		// }
 
 
 		//OBTENGO TODOS LOS PRODUCTOS

@@ -28,7 +28,7 @@ switch($queHago){
 							<td><img src='archivos/".$prod->GetPathFoto()."' width='100px' height='100px'/> </td>
 							<td>	
 							<input type='button' class='MiBotonUTN' onclick='Main.AgregarProducto()' value='Eliminar'  />
-							<input type='button' class='MiBotonUTN' onclick='Main.AgregarProducto()' value='Modificar'  />	
+							<input type='button' class='MiBotonUTN' onclick='Eliminar()' value='Modificar'  />	
 							<td>	
 						</tr>";
 
@@ -81,6 +81,7 @@ switch($queHago){
 		
 		break;
 	
+		
 	case "eliminar":
 		$codBarra = isset($_POST['codBarra']) ? $_POST['codBarra'] : NULL;
 	
