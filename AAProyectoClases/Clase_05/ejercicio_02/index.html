@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+<script type="text/javascript">
+
+
+var ajax = new XMLHttpRequest;
+ajax.open("POST", "php/leer.php");
+ajax.setRequestHeader("content-type", "application/x-www-form-urlencoded");
+ajax.send();
+
+ajax.onreadystatechange = () => {
+        if (ajax.readyState == 4 && ajax.status == 200) {
+           console.log(ajax.responseText);
+
+          obj = JSON.parse(ajax.responseText);
+          console.log(obj);
+        }
+}
+
+
+
+
+
+
+</script>
+
+</head>
+<body>
+
+
+  
+</body>
+</html>
