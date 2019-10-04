@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!-- AÑADO LIBRERIA DE JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script src="archivo.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" name="Inserte" id="mensaje">
+    <input type="button" value="Mostrar desde PHP" onclick="MostrarMensaje()">
+
+    <div id="divMensaje"></div>
+
+
+    <input type="button" value="Mostrar desde Funcion"onclick="Realizar()">
+
+
+    <div>
+        <input type="file" id="archivo" name="archivo" onchange="SubirFoto()" /> 
+        <input type="image" id="imagen"/> 
+    </div>
+
+    <!-- <script type="text/javascript">
+    
+    function MostrarMensaje()
+    {
+          $("#divMensaje").html($("#mensaje").val());
+
+        $.ajax({
+            type: 'POST',
+            url: 'BACKEND/test.php',
+            data: 'mensaje=' + $("#mensaje").val(),
+            dataType: 'json'})
+
+            .done(function(obj){
+                console.log(obj);
+                $("#divMensaje").html(obj.mensaje + " - " + obj.fecha);
+
+            })
+
+            .fail(function(error){});
+
+    } TODO ESTE CODIGO ES PARA USARLO SI SOLAMENTE FUERA PHP--> 
+
+
+
+    </script>
+
+</body>
+</html>
