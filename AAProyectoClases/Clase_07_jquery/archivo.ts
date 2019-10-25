@@ -1,5 +1,5 @@
 /// <reference path="node_modules\@types\jquery\index.d.ts" />
-
+// npm install jquery
 
 
 function Realizar(): void {
