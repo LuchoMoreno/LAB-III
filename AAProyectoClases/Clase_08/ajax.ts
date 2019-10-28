@@ -33,7 +33,7 @@ class Main{
 
         };
         
-        xmlh.open("POST","http://localhost/login/validarQueExista/",true);
+        xmlh.open("POST","http://localhost/Clase_08/validarQueExista/",true);
         //xmlh.open("POST","localhost/login/test_usuario.php/validarQueExista",true);
     
         xmlh.setRequestHeader("content-type","application/x-www-form-urlencoded");
