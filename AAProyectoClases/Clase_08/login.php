@@ -1,40 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
     <title>Clase 06 Laboratorio</title>
-    <script type="text/javaScript" src="ajax.js"> 
-    </script>
+  
+
+  <script type="text/javaScript" src="ajax.js"> </script>
+
+  <!-- INCLUYO LOS ESTILOS-->
+  
+  <link type="text/css" rel="stylesheet" href="CSS/Estilos.css" />
+
 </head>
+
+
+
 <body>
+                <tr>
+                <td>
+
+                <div id="imagenPropia"> 
+                <img src="CSS\icon.jpg">
+                </div>
+
+                </td>
+                </td>
+                
+                
     <form action="">
     <table align="center">
+    
     <tr>
     <td>
         Correo:<br>
         <input type="text" name="correo" id="correo">
     </td>
     </tr>
+    
+
     <tr>
     <td>
-        clave:<br>
+        Clave:<br>
         <input type="text" name="clave" id="clave">
     </td>
     <br>
     </tr>
+
+
     <tr>
     <td> <input type="button" value="Aceptar" onclick="Main.Login()">
     <input type="button" value="Cancelar"></td>
+    </tr>
 
-    </tr>
+
+
     <tr>
-    <td>     No estas registrado? ingrese 
-    <a href="registro.php"> aqui</a></td>
+    <td>     ¿No estas registrado? <a href="registro.php"> Ingrese aqui</a> </td>
     </tr>
+
     </table>
-    
     </form>
+
 </body>
+
 </html>
