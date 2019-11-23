@@ -35,6 +35,9 @@
 <body>
 
 
+<div class="container center_div"> <!-- container -->
+
+
 <form class="well form-horizontal" id="FormRegistro" >
 
 
@@ -148,6 +151,7 @@
 
 </form>
 
+</div> <!-- div container -->
 
 <form class="well form-horizontal" id="FormRegistroInferior" >
 <tr>

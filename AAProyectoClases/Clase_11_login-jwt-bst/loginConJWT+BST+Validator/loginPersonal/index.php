@@ -12,8 +12,8 @@
      
         <!-- RECORDATORIO: BOWER INSTALL - COMPOSER INSTALL // PARA QUE FUNCIONE TODO BIEN-->
 
-        <!-- INCLUYO LOS ESTILOS
-        <link type="text/css" rel="stylesheet" href="CSS/Estilos.css" />-->
+        <!-- INCLUYO LOS ESTILOS-->
+        <link type="text/css" rel="stylesheet" href="CSS/EstilosPropios.css"/>
 
 
         <!-- INCLUYO EL AJAX-->
@@ -35,12 +35,9 @@
 </head>
 <body>
 
+<div class="container center_div"> <!-- container -->
 
-<form class="well form-horizontal" id="loginID" >
-
-
-<div class="container"> <!-- container -->
-
+<form class="well form-horizontal" id="loginID">
 
 
 <div class="text-center">
@@ -53,6 +50,7 @@
                   </td>
   </tr>
 </div>
+
 
 <div class="form-group">     
       <label class="col-md-4 control-label">Email del Usuario</label>
@@ -98,12 +96,12 @@
       </div>
 </div>
 
+</form>
 
 </div> <!-- div container -->
 
-</form>
 
-<form class="well form-horizontal" id="loginIDInferior" >
+<form class="well form-horizontal" id="loginIDInferior"> 
 
 <tr>
 <a href="registro.php" class="irHaciaInferior">¿Desea registrarse?</a>
