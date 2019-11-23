@@ -12,8 +12,8 @@ var Main = /** @class */ (function () {
                 if (recibido.exito == true) {
                     alert(recibido.jwt);
                     localStorage.setItem("MiClave", recibido.jwt);
-                    //alert("Esta entrando a la pagina");
-                    //window.location.href = "principal.php";
+                    alert("Esta entrando a la pagina");
+                    window.location.href = "principal.php";
                 }
                 else {
                     alert("No se encuentra el usuario");
@@ -47,6 +47,8 @@ var Main = /** @class */ (function () {
         xmlh.onreadystatechange = function () {
             if (xmlh.readyState == 4 && xmlh.status == 200) {
                 console.log(xmlh.responseText);
+                alert("Usuario registrado, volviendo al login principal");
+                window.location.href = "index.php";
             }
         };
     };

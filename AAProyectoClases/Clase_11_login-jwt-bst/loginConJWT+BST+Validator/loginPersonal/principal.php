@@ -33,12 +33,12 @@
     }
     
     ?>
-    <tr>
-    <td>Listado de productos <a href="test_pdf_productos.php"> -> Ingrese aqui</a></td>
-    </tr>
+
+
     <tr>
     <td> <a href="cerrarSesion.php">Cerrar sesion</a></td>
     </tr>
+    
     </table>   
 </body>
 
